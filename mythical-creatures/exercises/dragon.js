@@ -6,6 +6,7 @@ class Dragon {
         this.rider = rider;
         this.hungry = true;
         this.meal = 1;
+        console.log(this.name)
         console.log(this.meal)
         console.log(this.hungry)
     }
