@@ -13,9 +13,7 @@ class Medusa {
         if (this.statues.length > 3) {
             var freedStatue = this.statues.shift(statue.name)
             var person1 = new Person(freedStatue.name)
-            console.log('Freed Statues:', freedStatue.name)
             person1.mood = 'relieved';
-            console.log(person1)
             return person1
         }
     }
