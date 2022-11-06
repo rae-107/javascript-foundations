@@ -14,14 +14,14 @@ class Stark {
         }
     }
     callDirewolf(name, home) {
-        var direwolf1 = new Direwolf(name, this.location)
-        var stark1 = new Stark({name: 'Arya', area: 'Riverlands'})
+        var direwolf = new Direwolf(name, this.location)
+        var stark = new Stark({name: 'Arya', area: 'Riverlands'})
+        // this.safe = true
+        // direwolf1.starksToProtect.push(stark1)
+        direwolf.protect(stark)
         this.safe = true
-        direwolf1.starksToProtect.push(stark1)
 
-        return direwolf1  
-        // console.log(this.starkObj)
-        // return direwolf.protect()
+        return direwolf  
     }
 }
 

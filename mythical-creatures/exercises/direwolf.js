@@ -7,7 +7,8 @@ class Direwolf {
         this.huntsWhiteWalkers = true
     }
     protect(starkObj) {
-        if(this.home === starkObj.location && this.starksToProtect.length < 2) {
+        if(this.starksToProtect.length < 2 && starkObj.location === this.home) {        
+            console.log(starkObj.location)
             starkObj.safe = true
             this.huntsWhiteWalkers = false
             this.starksToProtect.push(starkObj)
@@ -22,3 +23,5 @@ class Direwolf {
 
 
 module.exports = Direwolf
+
+// this.home === starkObj.location && 
